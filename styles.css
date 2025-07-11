@@ -1,3 +1,102 @@
 li {
     list-style: none;
 }
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: auto 1fr;
+}
+
+.sidebar {
+    grid-column: 1/2;
+    grid-row: 1/-1;
+    display: grid;
+    grid-template-rows: 1fr 3fr 2fr;
+    background-color: chartreuse;
+}
+
+.logo {
+    grid-row: 1/2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.menu-main{
+    grid-row: 2/3;
+}
+.menu-secondary{
+    grid-row: 3/4;
+}
+
+.header-container {
+    grid-column: 2/-1;
+    grid-row: 1/2;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.search{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-color: red;
+}
+.profile{
+    grid-column: 2/-1;
+    grid-row: 1/2;
+    background-color: blue;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.welcome{
+    grid-column: 1/2;
+    grid-row: 2/-1;
+    background-color: green;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.welcome p {
+    grid-column: 2/-1;
+}
+.welcome img {
+    grid-column: 1/2;
+    grid-row: 1/-1;
+}
+
+.dataButtons{
+    grid-column: 2/-1;
+    grid-row: 2/-1;
+    background-color: aqua;
+}
+
+.main-content {
+    grid-column: 2/-1;
+    grid-row: 2/-1;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    background-color: blueviolet;
+}
+
+.projects{
+    grid-column: 1/2;
+    display: grid;
+    /* grid-template-columns: repeat(2, 1fr); */
+    grid-template-rows: auto 1fr;
+}
+.projects-container{
+    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-rows: auto; */
+
+
+}
+.rightBar{
+    grid-column: 2/-1;
+    background-color: red;
+}
+
+.trending{
+    background-color: aqua;
+}
