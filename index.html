@@ -64,7 +64,7 @@
         <div class="header-container">
             <div class="top-section">
                 <div class="search">
-                    <label for="search-field"><img src="./imgs/magnify.svg" alt="Search Icon" class="icon"></label>
+                    <label for="search-field"><img src="./imgs/magnify.svg" alt="Search Icon" class="icon" id="search-icon"></label>
                     <input type="text" id="search-field">
                 </div>
 
@@ -97,7 +97,7 @@
                 <div class="projects-container">
                     <div class="project">
                         <div class="textSection">
-                            <h5>Super Cool Project</h5>
+                            <h5 class="project-title">Super Cool Project</h5>
                             <p>This is my first project. Very cool project to start with. Was a lot of fun!</p>
                         </div>
                         <div class="buttonSection">
@@ -108,7 +108,7 @@
                     </div>
                     <div class="project">
                         <div class="textSection">
-                            <h5>Quantum Commit</h5>
+                            <h5 class="project-title">Quantum Commit</h5>
                             <p>This is my 2nd project. Very cool project. Was a lot of fun! I am still learning</p>
                         </div>
                         <div class="buttonSection">
@@ -119,7 +119,7 @@
                     </div>
                     <div class="project">
                         <div class="textSection">
-                            <h5>Build Better Bots</h5>
+                            <h5 class="project-title">Build Better Bots</h5>
                             <p>This is my 3rd project.</p>
                         </div>
                         <div class="buttonSection">
@@ -130,7 +130,7 @@
                     </div>
                     <div class="project">
                         <div class="textSection">
-                            <h5>Pug Generator</h5>
+                            <h5 class="project-title">Pug Generator</h5>
                             <p>This is my 4th project. Very cool project. Was a lot of fun! I feel like I am getting a good grasp on things, but still far from an expert. A few more projects before I feel fully confident.</p>
                         </div>
                         <div class="buttonSection">
@@ -141,7 +141,7 @@
                     </div>
                     <div class="project">
                         <div class="textSection">
-                            <h5>Code the Future</h5>
+                            <h5 class="project-title">Code the Future</h5>
                             <p>This is my 5th project. Very cool project. Was a lot of fun! I am getting much better</p>
                         </div>
                         <div class="buttonSection">
@@ -152,7 +152,7 @@
                     </div>
                     <div class="project">
                         <div class="textSection">
-                            <h5>Pixels to Protocols</h5>
+                            <h5 class="project-title">Pixels to Protocols</h5>
                             <p>This is my last project. Very cool project to end it on. Was a lot of fun and a great learning experience!</p>
                         </div>
                         <div class="buttonSection">
@@ -163,54 +163,52 @@
                     </div>
                 </div>
             </div>
-            <div class="rightBar">
-                <div class="announcements">
-                    <h3>Announcements</h3>
-                    <div class="annoucement-content">
-                        <div class="announcement">
-                            <h6>Site Maintenance</h6>
-                            <p>Our site will be undergoing scheduled maintenance to improve performance and reliability. Some features may be temporarily unavailable during this time.</p>
-                        </div>
-                        <div class="announcement">
-                            <h6>New Menu Items Now Available!</h6>
-                            <p>We've added fresh, seasonal dishes to our menu—come discover your new favorites today!</p>
-                        </div>
-                        <div class="announcement">
-                            <h6>Updated Privacy Policy</h6>
-                            <p>We’ve updated our Privacy Policy to provide greater clarity on how we collect, use, and protect your information. Please review the changes to stay informed.</p>
-                        </div>
+            <div class="announcements">
+                <h3>Announcements</h3>
+                <div class="annoucement-content">
+                    <div class="announcement">
+                        <h6 class="project-title">Site Maintenance</h6>
+                        <p>Our site will be undergoing scheduled maintenance to improve performance and reliability. Some features may be temporarily unavailable during this time.</p>
+                    </div>
+                    <div class="announcement">
+                        <h6 class="project-title">New Menu Items Now Available!</h6>
+                        <p>We've added fresh, seasonal dishes to our menu—come discover your new favorites today!</p>
+                    </div>
+                    <div class="announcement">
+                        <h6 class="project-title">Updated Privacy Policy</h6>
+                        <p>We’ve updated our Privacy Policy to provide greater clarity on how we collect, use, and protect your information. Please review the changes to stay informed.</p>
                     </div>
                 </div>
-                <div class="trending">
-                    <h3>Trending</h3>
-                    <div class="trending-content">
-                        <div class="trend">
-                            <img src="" alt="Profile Pic">
-                            <p>
-                                <span>@teganan</span><br>
-                                <span>World Peace Builder</span>
-                            </p>
+            </div>
+            <div class="trending">
+                <h3>Trending</h3>
+                <div class="trending-content">
+                    <div class="trend">
+                        <img src="./imgs/user1.png" alt="Profile Pic" class="profile-image">
+                        <div class="trend-text">
+                            <p class="trend-name">@teganan</p>
+                            <p class="trend-content">World Peace Builder</p>
                         </div>
-                        <div class="trend">
-                            <img src="" alt="Profile Pic">
-                            <p>
-                                <span>@Dankol</span><br>
-                                <span>Super Cool Project</span>
-                            </p>
+                    </div>
+                    <div class="trend">
+                        <img src="./imgs/user2.png" alt="Profile Pic" class="profile-image">
+                        <div class="trend-text">
+                            <p class="trend-name">@Dankol</p>
+                            <p class="trend-content">Super Cool Project</p>
                         </div>
-                        <div class="trend">
-                            <img src="" alt="Profile Pic">
-                            <p>
-                                <span>@kendall</span><br>
-                                <span>Life Changing App</span>
-                            </p>
+                    </div>
+                    <div class="trend">
+                        <img src="./imgs/user3.png" alt="Profile Pic" class="profile-image">
+                        <div class="trend-text">
+                            <p class="trend-name">@kendall</p>
+                            <p class="trend-content">Life Changing App</p>
                         </div>
-                        <div class="trend">
-                            <img src="" alt="Profile Pic">
-                            <p>
-                                <span>@alex</span><br>
-                                <span>No Traffic Maker</span>
-                            </p>
+                    </div>
+                    <div class="trend">
+                        <img src="./imgs/user4.png" alt="Profile Pic" class="profile-image">
+                        <div class="trend-text">
+                            <p class="trend-name">@alex</p>
+                            <p class="trend-content">No Traffic Maker</p>
                         </div>
                     </div>
                 </div>
